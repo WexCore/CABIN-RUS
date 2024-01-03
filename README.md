@@ -8,7 +8,7 @@
 
 
 ## Описание
-В данном репозитории русификатор для модпака [CABIN: Create Above & Beyond In Newer](https://www.curseforge.com/minecraft/modpacks/cabin), который в свою очередь является портом [Create: Above and Beyond](https://www.curseforge.com/minecraft/modpacks/create-above-and-beyond) на современную версию Minecraft. Реализован перевод квестбука и кастомных предметов.
+В данном репозитории русификатор для модпака [CABIN: Create Above & Beyond In Newer](https://www.curseforge.com/minecraft/modpacks/cabin), который в свою очередь является неофициальным портом [Create: Above and Beyond](https://www.curseforge.com/minecraft/modpacks/create-above-and-beyond) на современную версию Minecraft. Реализован перевод квестбука и кастомных предметов.
 
 ## Установка
 **ДЛЯ МОДПАКА ВЕРСИИ 1.1.4**

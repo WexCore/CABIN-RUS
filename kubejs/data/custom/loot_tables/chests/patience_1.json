@@ -1,0 +1,505 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"weight": 5,
+			"name": "minecraft:apple",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Мотивационное яблоко",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 5,
+			"name": "minecraft:cookie",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Мотивационная печенька",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:pufferfish",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Мотивационный иглобрюх",
+				  "italic": false
+				}
+			  }
+			]
+		  }
+		],
+		"conditions": [
+		  {
+			"condition": "minecraft:random_chance",
+			"chance": 0.075
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Продолжай.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Мы сделаем это.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Не останавливайся пока не будешь горд собой.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Мечтай по большому.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Ты получишь то что даешь.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "будь собой.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Рискни или потеряй шанс.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Ты сильнее чем думаешь",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Никогда не сдавайся.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Все возможно.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Оно всегда кажется невозможным пока ты за это не возьмешься.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Верь в себя.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Все ближе...",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Точно получится.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Докажи что они не правы.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Неудача это часть прогресса.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Не отпускай.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Будь храбр.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Просто продолжай.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Будь сильнее чем твои оправдания",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "В любую минуту...",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Извините.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Упорство - ключ к успеху.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Сегодня хорошая погода.",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "А может в следующем ящике?",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Так близко, и так далеко...",
+				  "italic": false
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:paper",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Упаковка этого заняла целую вечность.",
+				  "italic": false
+				}
+			  }
+			]
+		  }
+		],
+		"conditions": [
+		  {
+			"condition": "minecraft:random_chance",
+			"chance": 0.09
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"weight": 2500000,
+			"name": "minecraft:barrel",
+			"functions": [
+			  {
+				"function": "minecraft:set_loot_table",
+				"type": "minecraft:chest",
+				"name": "custom:chests/patience_1"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+				  {
+					"text": "Легендарный приз ждет вас внизу...",
+					"color": "gray",
+					"italic": true
+				  }
+				]
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:barrel",
+			"functions": [
+			  {
+				"function": "minecraft:set_loot_table",
+				"type": "minecraft:chest",
+				"name": "custom:chests/patience_2"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": {
+				  "text": "Награда терпения",
+				  "color": "dark_green",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+				  {
+					"text": "Легендарный приз...",
+					"color": "gray",
+					"italic": true
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

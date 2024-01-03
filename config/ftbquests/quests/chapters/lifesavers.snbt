@@ -1,0 +1,877 @@
+{
+	id: "0D0BC5B3F6623669"
+	group: "331B6409EF6A7840"
+	order_index: 8
+	filename: "lifesavers"
+	title: " Выручалки"
+	icon: "minecraft:totem_of_undying"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Центр Контроля"
+			icon: "projectred_illumination:red_inverted_fixture_light"
+			x: -4.0d
+			y: 1.0d
+			description: [
+				"Благодаря новым схемам и возможностям проводки, вы можете сделать свою фабрику немного умнее. Кроме того, лампы, которые вы можете сделать, очень красивы."
+				""
+				"Что касается реального совета: довольно просто установить в нескольких точках вашей фабрики небольшие цепи, которые определяют, когда предмет не производился в течение некоторого времени. Вы можете использовать связи из красного камня, чтобы перенаправить эти сигналы в комнату контроля, что даст вам представление о том, какие участки требуют обслуживания."
+				""
+				"Схема на месте представляет собой перетягивание каната между медленным таймером и наблюдателем, обнаруживающим предметы. Счетчик отлично подходит для этого."
+			]
+			id: "1127129CBA2B5E6F"
+			tasks: [
+				{
+					id: "19CF5DA7A8547E17"
+					type: "item"
+					item: "projectred_core:platformed_plate"
+					consume_items: false
+				}
+				{
+					id: "457F0290A225EEA9"
+					type: "item"
+					item: "projectred_transmission:red_alloy_wire"
+					consume_items: false
+				}
+				{
+					id: "17B93B8634BC1C2D"
+					type: "item"
+					title: "Any Illumar Dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "projectred_core:illumars"
+						}
+					}
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "66E867F9537437F1"
+				type: "item"
+				item: "projectred_core:red_ingot"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Лучший друг инженера"
+			x: -5.0d
+			y: -1.0d
+			description: ["Особенно при создании новых устройств, этот гаджет невероятно удобен. Вместо того чтобы набивать карманы компонентами, просто заберите ящик с инструментами из мастерской и возьмите его с собой."]
+			id: "26C39961F2E2ABF2"
+			tasks: [{
+				id: "5E687A6CBD96D0EF"
+				type: "item"
+				title: "Any Toolbox"
+				icon: "create:blue_toolbox"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "2AC846CB2DF485C8"
+				type: "item"
+				item: "create:golden_sheet"
+			}]
+		}
+		{
+			title: "Пузырные блоки"
+			icon: "supplementaries:bubble_block"
+			x: 1.0d
+			y: -1.0d
+			description: [
+				"Наложение на пузыродувателя чар стазиса позволяет ему выдувать пузырьковые блоки, которые вы можете заменить другими блоками, и идти дальше. (Приседайте, чтобы продлить время действия)"
+				""
+				"Для работы пузырьковых воздуходувок требуется мыло, но сами они никогда не потеряют долговечности."
+			]
+			id: "0B8816319F81C12A"
+			tasks: [{
+				id: "180D1CB1BB7EB0AA"
+				type: "item"
+				item: {
+					id: "supplementaries:bubble_blower"
+					Count: 1b
+					tag: {
+						Damage: 250
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "7488D3D81C7FAC51"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "supplementaries:stasis"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "Большие Бочки II"
+			x: 1.0d
+			y: 3.0d
+			description: ["Если вам нужно дополнительное большое, но специализированное место для хранения в блоке, обратите внимание на Storage Drawers."]
+			id: "382EBC32AC27C839"
+			tasks: [{
+				id: "4BE344E1F204A43D"
+				type: "item"
+				title: "Any Storage Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "2285D6CE87319B4A"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Радости Кулинарии"
+			x: 0.0d
+			y: -3.0d
+			description: ["Кухонная плита - это красивая и очень полезная альтернатива костру. Вместе с котелком она поможет вам приготовить самые вкусные блюда в игре."]
+			id: "0E4476BA80B316F6"
+			tasks: [{
+				id: "72F2D3B586A81A2B"
+				type: "item"
+				item: "farmersdelight:stove"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "02BA7C4E293DD955"
+				type: "item"
+				item: "minecraft:salmon"
+			}]
+		}
+		{
+			title: "Горячая Замена"
+			x: -3.0d
+			y: -1.0d
+			description: ["Exchangers - хорошие инструменты для замены блоков на другие. Это сэкономит вам много времени на копании."]
+			id: "6D7D504E9DC22590"
+			tasks: [{
+				id: "4BE0CCD6F383D961"
+				type: "item"
+				title: "Any Exchanger"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "exchangers:end_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:leadstone_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:hardened_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:reinforced_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:signalum_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:resonant_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:tuberous_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:creative_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:wooden_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:stone_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:golden_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:iron_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:diamond_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+							{
+								id: "exchangers:emerald_exchanger"
+								Count: 1b
+								tag: {
+									mode: 0
+									fuzzyPlacementChance: 100
+									directionalPlacement: 0b
+									forceDropItems: 0b
+									fuzzyPlacement: 0b
+									voidItems: 0b
+									range: 0
+									Damage: 0
+									blockstate: {
+										Name: "minecraft:air"
+									}
+								}
+							}
+						]
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "12B2F2F9A6A257FE"
+				type: "item"
+				item: "forbidden_arcanus:ender_pearl_fragment"
+			}]
+		}
+		{
+			title: "Блокчейн"
+			x: -1.0d
+			y: -1.0d
+			description: ["Строительные жезлы могут воздвигать целые стены или поверхности блоков одним нажатием кнопки."]
+			id: "2F469F6F1511D9C4"
+			tasks: [{
+				id: "039DD9EBD46B2C23"
+				type: "item"
+				title: "Any Construction Wand"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "constructionwand:stone_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+							{
+								id: "constructionwand:infinity_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+								}
+							}
+							{
+								id: "constructionwand:diamond_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+							{
+								id: "constructionwand:iron_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "5B7C253D05152423"
+				type: "item"
+				item: "minecraft:scaffolding"
+				count: 16
+			}]
+		}
+		{
+			title: "Передай мне масло"
+			x: 3.0d
+			y: -1.0d
+			description: ["Человеческие руки просто еще не развиты для эффективного создания машин. К счастью, этот гаджет может компенсировать это, значительно увеличив расстояние досягаемости."]
+			id: "7061F42CF050ADCA"
+			tasks: [{
+				id: "0710C744349D2090"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "40E5D8DBF58086BB"
+				type: "item"
+				item: "create:cogwheel"
+				count: 8
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.0d
+			description: ["Иногда хочется отправиться в определенный биом. Компас природы может по крайней мере указать вам правильное направление."]
+			id: "45E7810E21F6F9AE"
+			tasks: [{
+				id: "7AD38BD1318A493B"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "482338485BF4B3B0"
+				type: "item"
+				item: "biomesoplenty:spanish_moss"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Большие Бочки"
+			x: -1.0d
+			y: 3.0d
+			description: ["Если вам нужно большое универсальное пространство для хранения в блоке, ознакомьтесь с вариантами модернизации деревянных бочек."]
+			id: "50E2D6459F3D68C0"
+			tasks: [{
+				id: "6D6CDA4DEFD5795F"
+				type: "item"
+				title: "Any Upgraded Barrel"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "metalbarrels:gold_barrel"
+								Count: 1b
+							}
+							{
+								id: "metalbarrels:iron_barrel"
+								Count: 1b
+							}
+							{
+								id: "metalbarrels:silver_barrel"
+								Count: 1b
+							}
+							{
+								id: "metalbarrels:copper_barrel"
+								Count: 1b
+							}
+						]
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "390AF1049C411219"
+				type: "item"
+				item: "minecraft:barrel"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Домостроительная Пушка"
+			x: 1.0d
+			y: -1.0d
+			description: ["С помощью Схематичной Пушки любая схема .nbt может быть выстроена в ваш мир. Используйте ее для воспроизведения частей вашего здания или даже для того, чтобы заранее подготовить его в совершенно другом мире."]
+			id: "09EB29F838620371"
+			tasks: [{
+				id: "103E6982FCFE8B6C"
+				type: "item"
+				item: "create:schematicannon"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "7AF62EF3656DD4E3"
+				type: "item"
+				item: "create:empty_schematic"
+			}]
+		}
+		{
+			title: "Большие Планы"
+			x: 2.0d
+			y: -3.0d
+			description: [
+				"Этим чертежам можно дать один или несколько рецептов изготовления, которые затем применяются к удерживаемым предметам, когда вы щелкаете по ним правой кнопкой мыши."
+				""
+				"Самый быстрый и эффективный способ назначения рецептов - найти рецепт в JEI при открытом пользовательском интерфейсе чертежа. Нажав на"
+				"\"+\" в окне просмотра рецепта JEI, вы перенесете ингредиенты рецепта в чертеж."
+			]
+			id: "6D900619B1967D72"
+			tasks: [{
+				id: "006D992D77A782EF"
+				type: "item"
+				item: "create:crafting_blueprint"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "47ADAFAB537F63CE"
+				type: "item"
+				item: "minecraft:painting"
+			}]
+		}
+		{
+			title: "Напорная труба"
+			x: -7.0d
+			y: 3.0d
+			description: [
+				"Ремни и Манипуляторы - это конечно здорово, но иногда мы все же поддаемся постыдному желанию использовать предметные трубы."
+				""
+				"Однако эти трубы могут служить даже в качестве довольно сложной логистической инфраструктуры. Такие блоки, как терминал предметов или крафтинга, смогут запрашивать предметы из любых подключенных к ним сундуков."
+			]
+			id: "334146C815B304DB"
+			tasks: [{
+				id: "461F9FF1732B308F"
+				type: "item"
+				item: "prettypipes:pipe"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "35445550FFC9B565"
+				type: "item"
+				item: "kubejs:pipe_module_tier_1"
+			}]
+		}
+		{
+			title: "Индукционные Проводники"
+			x: -3.0d
+			y: 3.0d
+			description: [
+				"С появлением индуктивных машин вы захотите иметь возможность соединять динамо-машины и машины в энергетическую сеть."
+				""
+				"Вы можете использовать серповидный молот, чтобы щелкнуть правой кнопкой мыши по соединению трубы, прикрепленному к блоку, чтобы включить / отключить соединение, а ограничители потока можно использовать для редактирования RF/t, которые могут быть экспортированы из данного соединения."
+			]
+			id: "6BC864CC7CB2C316"
+			tasks: [{
+				id: "4912723B6A264380"
+				type: "item"
+				item: "thermal:energy_duct"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "5EA5B33DA2E47592"
+				type: "item"
+				item: "thermal:signalum_ingot"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Друг?"
+			x: -2.0d
+			y: -3.0d
+			description: ["Размещение резной тыквы на блок сена создает соломенного голема, который будет заботиться о ваших посевах."]
+			id: "1DBFD0B34659A8F9"
+			tasks: [
+				{
+					id: "7596BE1437EA002D"
+					type: "item"
+					item: "minecraft:hay_block"
+					consume_items: false
+				}
+				{
+					id: "7986E1E6575F2C25"
+					type: "item"
+					item: "minecraft:carved_pumpkin"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "7BD14F5479FAB194"
+				type: "item"
+				item: "minecraft:sweet_berries"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Бросок на Интеллект"
+			x: 2.0d
+			y: 1.0d
+			description: ["Иногда бывает трудно принять решение. К счастью, у нас есть технологии, которые помогают нам в этом."]
+			id: "087659F192F41C6E"
+			tasks: [{
+				id: "0F82D1FCCA10EFBC"
+				type: "item"
+				title: "Any Dice"
+				icon: "dice:white_d6"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "dice"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "3D69B03DFCB41179"
+				type: "item"
+				icon: "kubejs:silver_coin"
+				item: "thermal:silver_coin"
+				count: 10
+			}]
+		}
+		{
+			title: "Другой Режим Игры"
+			icon: "magicfeather:magicfeather"
+			x: 3.0d
+			y: 3.0d
+			description: ["Волшебные Перья даруют полет, хотя и только лишь в пределах досягаемости Луча Маяка. Тем не менее, это окажет вам большую помощь в создании огромных фабрик!"]
+			id: "0F4B0608CBF966E6"
+			tasks: [
+				{
+					id: "18A86C2CE288A35A"
+					type: "item"
+					item: "magicfeather:magicfeather"
+					consume_items: false
+				}
+				{
+					id: "6D2E7DBD75292896"
+					type: "item"
+					item: "minecraft:beacon"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "3E31A943AAC038E9"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 9
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			description: [
+				"Эти симпатичные рюкзаки можно улучшать, чтобы увеличить пространство для хранения, а также дополнить, чтобы изменить их работу, например, использовать автоматическую печь или увеличить количество предметов, хранящихся внутри."
+				""
+				"Вы даже можете приобрести один из них в магазине, так что, возможно, стоит потратить на него свои первые монеты, чтобы шахтерский процесс в начале игры прошел намного быстрее."
+			]
+			id: "661807F8ED723EEB"
+			tasks: [{
+				id: "65A12D108D1E18AA"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "1186F7D43411D62D"
+				type: "item"
+				item: "sophisticatedbackpacks:jukebox_upgrade"
+			}]
+		}
+		{
+			title: "Облегченное движение жидкости"
+			x: -5.0d
+			y: 3.0d
+			description: [
+				"Жидкостные трубы из мода Thermal Expansion перемещают жидкости, не требуя единиц стресса. Сервоприводы, размещенные на соединениях, используются для подачи жидкостей в трубы, а фильтры используются для контроля того, что может быть экспортировано из данной трубы."
+				""
+				"Вы можете использовать серповидный молоток, чтобы щелкнуть правой кнопкой мыши по соединению трубы, прикрепленному к блоку, чтобы включить / отключить соединение."
+			]
+			id: "1DD2802F5611D419"
+			tasks: [{
+				id: "09FD6301B7CF206E"
+				type: "item"
+				item: "thermal:fluid_duct"
+			}]
+			rewards: [{
+				id: "3A35387B6A431842"
+				type: "item"
+				item: "kubejs:attachment_base"
+			}]
+		}
+		{
+			title: "Портативный"
+			x: -6.0d
+			y: -3.0d
+			description: ["Как и следует из названия, это камнерез, который вы можете использовать в дороге. У него также есть внутренний инвентарь, и он также может закреплять рецепты."]
+			id: "4B1017D1C176412F"
+			tasks: [{
+				id: "0FC4AFC9209B61A3"
+				type: "item"
+				item: "portable_stonecutter:portable_stonecutter"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "07C632B31F279953"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			title: "Программирование будущего"
+			icon: "computercraft:computer_normal"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"Если вы знаете язык программирования LUA (или готовы учиться), ComputerCraft может стать очень мощным инструментом на вашем заводе, поскольку ComputerCraft может считывать информацию из блоков Create."
+				""
+				"CC:C Bridge расширяет это немного дальше, позволяя целевому и исходному блокам выполнять чтение и запись для перспективного создания отображаемых целевых объектов."
+			]
+			id: "374933A06E016CE9"
+			tasks: [{
+				id: "42002EEA26A72016"
+				type: "item"
+				title: "Any Computer"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "computercraft:computer_normal"
+								Count: 1b
+							}
+							{
+								id: "computercraft:computer_advanced"
+								Count: 1b
+							}
+						]
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "071BEECB37AFECB4"
+				type: "item"
+				item: "cccbridge:target_block"
+			}]
+		}
+{
+			title: "Высекание камня"
+			icon: "rechiseledcreate:mechanical_chisel"
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"Rechiseled добавляет множество вариантов блоков, чтобы предоставить вам больше опций при создании вашей базы."
+				""
+				"Rechiseled: CABIN Additions добавляет множество блоков, включая классические долото и каменные блоки, чтобы предоставить вам еще больше возможностей."
+				""
+				"Rechiseled: Create добавляет еще больше блоков, а также способ автоматизировать долбление всего вышеперечисленного с помощью механического долота."
+			]
+			id: "78A8751AF86E0E32"
+			tasks: [{
+				id: "728C7440719BF00D"
+				type: "item"
+				item: {
+					id: "rechiseled:chisel"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "65589D633E5A9F73"
+				type: "item"
+				item: "rechiseledcabinadditions:checkertile"
+				count: 16
+			}]
+		}
+	]
+	quest_links: [ ]
+}

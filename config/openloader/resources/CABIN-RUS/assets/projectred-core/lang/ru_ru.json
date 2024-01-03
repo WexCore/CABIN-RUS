@@ -1,0 +1,43 @@
+{
+	"item.projectred-core.platformed_plate": "Сборка цепи",
+
+	"item.projectred-illumination.white_cage_light": "Белая лазерная лампа",
+	"item.projectred-illumination.orange_cage_light": "Оранжевая лазерная лампа",
+	"item.projectred-illumination.magenta_cage_light": "Пурпурная лазерная лампа",
+	"item.projectred-illumination.light_blue_cage_light": "Светло-синяя лазерная лампа",
+
+	"item.projectred-illumination.lime_cage_light": "Лаймовая лазерная лампа",
+	"item.projectred-illumination.yellow_cage_light": "Желтая лазерная лампа",
+	"item.projectred-illumination.pink_cage_light": "Розовая лазерная лампа",
+	"item.projectred-illumination.purple_cage_light": "Фиолетовая лазерная лампа",
+
+	"item.projectred-illumination.gray_cage_light": "Серая лазерная лампа",
+	"item.projectred-illumination.light_gray_cage_light": "Светло-серая лазерная лампа",
+	"item.projectred-illumination.cyan_cage_light": "Голубая лазерная лампа",
+	"item.projectred-illumination.blue_cage_light": "Синяя лазерная лампа",
+
+	"item.projectred-illumination.brown_cage_light": "Коричневая лазерная лампа",
+	"item.projectred-illumination.green_cage_light": "Зеленая лазерная лампа",
+	"item.projectred-illumination.red_cage_light": "Красная лазерная лампа",
+	"item.projectred-illumination.black_cage_light": "Черная лазерная лампа",
+
+	"item.projectred-illumination.white_inverted_cage_light": "Инвертированная белая лазерная лампа",
+	"item.projectred-illumination.orange_inverted_cage_light": "Инвертированная оранжевая лазерная лампа",
+	"item.projectred-illumination.magenta_inverted_cage_light": "Инвертированная пурпурная лазерная лампа",
+	"item.projectred-illumination.light_blue_inverted_cage_light": "Инвертированная светло-синяя лазерная лампа",
+
+	"item.projectred-illumination.lime_inverted_cage_light": "Инвертированная лаймовая лазерная лампа",
+	"item.projectred-illumination.yellow_inverted_cage_light": "Инвертированная желтая лазерная лампа",
+	"item.projectred-illumination.pink_inverted_cage_light": "Инвертированная розовая лазерная лампа",
+	"item.projectred-illumination.purple_inverted_cage_light": "Инвертированная фиолетовая лазерная лампа",
+
+	"item.projectred-illumination.gray_inverted_cage_light": "Инвертированная серая лазерная лампа",
+	"item.projectred-illumination.light_gray_inverted_cage_light": "Инвертированная светло-серая лазерная лампа",
+	"item.projectred-illumination.cyan_inverted_cage_light": "Инвертированная голубая лазерная лампа",
+	"item.projectred-illumination.blue_inverted_cage_light": "Инвертированная синяя лазерная лампа",
+
+	"item.projectred-illumination.brown_inverted_cage_light": "Инвертированная коричневая лазерная лампа",
+	"item.projectred-illumination.green_inverted_cage_light": "Инвертированная зеленая лазерная лампа",
+	"item.projectred-illumination.red_inverted_cage_light": "Инвертированная красная лазерная лампа",
+	"item.projectred-illumination.black_inverted_cage_light": "Инвертированная черная лазерная лампа"
+}

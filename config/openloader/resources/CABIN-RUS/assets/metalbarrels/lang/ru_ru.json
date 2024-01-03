@@ -1,0 +1,14 @@
+{
+    "block.metalbarrels.copper_barrel": "Бронзовая бочка",
+    "item.metalbarrels.copper_barrel": "Бронзовая бочка",
+    "block.metalbarrels.silver_barrel": "Таинственная бочка",
+    "item.metalbarrels.silver_barrel": "Таинственная бочка",
+    "block.metalbarrels.gold_barrel": "Кобальтовая бочка",
+    "item.metalbarrels.gold_barrel": "Кобальтовая бочка",
+    "block.metalbarrels.iron_barrel": "Инваровая бочка",
+    "item.metalbarrels.iron_barrel": "Инваровая бочка",
+    "item.metalbarrels.wood_to_copper": "Бронзовое улучшение бочки",
+    "item.metalbarrels.wood_to_iron": "Инваровое улучшение бочки",
+    "item.metalbarrels.wood_to_silver": "Таинственное улучшение бочки",
+    "item.metalbarrels.wood_to_gold": "Кобальтовое улчшение бочки"
+}

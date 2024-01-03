@@ -1,0 +1,1203 @@
+{
+	id: "052B4DEA706D3A24"
+	group: "331B6409EF6A7840"
+	order_index: 3
+	filename: "stage_3"
+	title: "&f3&r Катарсис"
+	icon: "thermal:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Начало 3 главы!"
+			icon: "create:precision_mechanism"
+			x: -1.5d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"Работая над пассивным снабжением сияющих индукционных катушек, вы обязательно столкнетесь с некоторыми новыми, ранее незнакомыми задачами."
+				""
+				"Снова пришло время взять гаечный ключ, пополнить запас инструментов и расчистить новый участок."
+				""
+				"Счастливого творчества!"
+			]
+			dependencies: ["780E8AE86250C73D"]
+			hide: true
+			size: 2.0d
+			id: "397232F676CB621B"
+			tasks: [{
+				id: "2236686383D4E61B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "296358DF5AEC671C"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "Да будет свет"
+			icon: "minecraft:torch"
+			x: -6.5d
+			y: 3.5d
+			shape: "circle"
+			subtitle: "Изобретение #27"
+			description: [
+				"Для производства изысканого сияния требуется либо постоянный запас светоизлучающих блоков, либо активный луч маяка."
+				""
+				"Выберите, по какому пути вы хотите пойти, и обеспечьте необходимые приготовления/автоматизацию."
+			]
+			hide_dependency_lines: true
+			dependencies: ["397232F676CB621B"]
+			id: "3025B5861FE17ADF"
+			tasks: [{
+				id: "7FB92D9DB34672AE"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Ваш любимый цвет"
+			icon: "minecraft:rose_bush"
+			x: 0.0d
+			y: 7.0d
+			subtitle: "Изобретение #25"
+			description: ["Для производства хроматических материалов необходим цветной пигмент. Какой именно цветной краситель должен быть автоматизирован для этой цели - решать вам. Ну кроме белого, он не подойдёт."]
+			dependencies: ["402F89CABF6BCDA4"]
+			id: "27C191346BB14D9D"
+			tasks: [
+				{
+					id: "6C47C95A06683D71"
+					type: "item"
+					title: "Красители кроме белого"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:light_blue_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:magenta_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:gray_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:light_gray_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:pink_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:lime_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:yellow_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:orange_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:cyan_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:purple_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:blue_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:brown_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:green_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:red_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:black_dye"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "32E697E9386ABF17"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Спектральная коррекция (Красный)"
+			x: -0.85d
+			y: 9.0d
+			shape: "circle"
+			description: [
+				"При дроблении окрашенных сингулярностей есть шанс получить маленькие шарики красного цвета."
+				""
+				"Поскольку это не тот цвет, который нужен для хроматического соединения, вы можете использовать предметный осушитель для коррекции частоты."
+			]
+			dependencies: ["2CCD84D55DE71EB2"]
+			id: "3B421C8F7947E542"
+			tasks: [{
+				id: "26CA0A31856D4445"
+				type: "item"
+				item: "ae2:red_paint_ball"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Спектральная коррекция (Жёлтый)"
+			x: -2.0d
+			y: 9.0d
+			shape: "circle"
+			description: [
+				"При дроблении окрашенных одиночек есть шанс получить маленькие шарики желтого цвета."
+				""
+				"Как и красные, они должны быть осушены еще раз, чтобы сдвинуть частоту в правильном направлении."
+			]
+			dependencies: [
+				"2CCD84D55DE71EB2"
+				"3B421C8F7947E542"
+			]
+			id: "381F8F373605BB97"
+			tasks: [{
+				id: "629CDAD0644963F4"
+				type: "item"
+				item: "ae2:yellow_paint_ball"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Спектральная коррекция (Зелёный)"
+			x: -3.0d
+			y: 8.5d
+			shape: "circle"
+			description: ["Цикл продолжается. "]
+			dependencies: [
+				"2CCD84D55DE71EB2"
+				"381F8F373605BB97"
+			]
+			id: "6A76E65324F0ACC0"
+			tasks: [{
+				id: "4BBF150A1DD3A0AF"
+				type: "item"
+				item: "ae2:green_paint_ball"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Спектральная коррекция (Синий)"
+			x: -3.5d
+			y: 7.5d
+			shape: "circle"
+			description: ["Почти достигнув цели, все шарики с краской, доведенные до синей частоты, нужно будет в последний раз пропустить через предметный осушитель."]
+			dependencies: [
+				"2CCD84D55DE71EB2"
+				"6A76E65324F0ACC0"
+			]
+			id: "302FCD205CC2F708"
+			tasks: [{
+				id: "16C40B4F7D56B9C9"
+				type: "item"
+				item: "ae2:blue_paint_ball"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Спектральная коррекция (Пурпурный)"
+			icon: "ae2:magenta_paint_ball"
+			x: -3.5d
+			y: 6.35d
+			subtitle: "Изобретение #26-2"
+			description: ["Шарики пурпурной краски содержат эссенцию, необходимую для производства хроматического соединения. Некоторые из них будут получены непосредственно из измельченной сингулярности, но большинство может быть получено путем спектральной коррекции других цветов."]
+			dependencies: [
+				"2CCD84D55DE71EB2"
+				"302FCD205CC2F708"
+			]
+			id: "3BE15AA5C237AB80"
+			tasks: [
+				{
+					id: "5DF1A84700EB5D15"
+					type: "item"
+					item: "ae2:magenta_paint_ball"
+					consume_items: false
+				}
+				{
+					id: "27D5CBB137116AB1"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Изысканные цвета"
+			icon: {
+				id: "create:chromatic_compound"
+				Count: 1b
+				tag: { }
+			}
+			x: -5.0d
+			y: 6.35d
+			subtitle: "Изобретение #26-3"
+			description: ["Используйте Механические сборщики, чтобы переработать шарики краски в Хроматическое соединение."]
+			dependencies: ["3BE15AA5C237AB80"]
+			id: "7B23C933D76458BA"
+			tasks: [
+				{
+					id: "2F334C3D67DE059C"
+					type: "item"
+					item: {
+						id: "create:chromatic_compound"
+						Count: 1b
+						tag: { }
+					}
+					consume_items: false
+				}
+				{
+					id: "27A8B7785CAB07C8"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Метательная вспышка"
+			icon: "create:refined_radiance"
+			x: -6.5d
+			y: 6.35d
+			subtitle: "Contraption 28-1"
+			description: [
+				"Когда хроматическое соединение лежит на земле как предмет, оно поглощает свет вокруг себя и в конечном итоге превращается в изысканное сияние. Выберите один из трех подходов:"
+				""
+				"- Авторазмещение излучающих светоизлучающих блоков рядом с выпавшими предметами соединения (блоки должны находиться в прямой видимости от предмета)"
+				""
+				"- Поставка светоизлучающих блоков в качестве предметов на близлежащие депо/ремни (блоки должны находиться в прямой видимости от предмета)"
+				""
+				"- Перекидывание соединеения через луч маяка для бесплатного и мгновенного преобразования"
+			]
+			dependencies: [
+				"3025B5861FE17ADF"
+				"7B23C933D76458BA"
+			]
+			id: "286510750C333C1F"
+			tasks: [
+				{
+					id: "7EF8C778FDE54DC1"
+					type: "item"
+					item: "create:refined_radiance"
+					consume_items: false
+				}
+				{
+					id: "2DC30322D81D9999"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Неоновые фонари"
+			icon: "kubejs:radiant_coil"
+			x: -4.0d
+			y: 11.0d
+			subtitle: "Изобретение #28-3"
+			description: ["И, наконец, последний крафтер, чтобы разрезать и намотать сияющий лист на индукционную катушку."]
+			dependencies: ["410FF28B63E0FC0C"]
+			id: "626A7D9947D82B89"
+			tasks: [
+				{
+					id: "3AF0E2934C047AA3"
+					type: "item"
+					item: "kubejs:radiant_coil"
+					consume_items: false
+				}
+				{
+					id: "27C737E08A9027A5"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Больше булыжника..."
+			icon: "minecraft:cobblestone"
+			x: -1.5d
+			y: 1.0d
+			subtitle: "Изобретение #20-1"
+			description: ["Надежный и дешевый многоцелевой материал - булыжник - снова возвращается."]
+			hide_dependency_lines: true
+			dependencies: ["397232F676CB621B"]
+			id: "5C277D27606F64DA"
+			tasks: [
+				{
+					id: "35C10E79F8F1E0DF"
+					type: "item"
+					title: "Any Cobblestone"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:cobblestone"
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "36BD580312C8177B"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Запускаем индукцию"
+			icon: "kubejs:inductive_mechanism"
+			x: -1.5d
+			y: 11.5d
+			subtitle: "Изобретение #29"
+			description: ["Вы знаете, как это делается. Пришло время перевести ваши ранее автоматизированные механизмы точности на новый уровень!"]
+			dependencies: [
+				"59D2104DB6AE93FD"
+				"626A7D9947D82B89"
+			]
+			id: "6CBA3D97CAD5DB63"
+			tasks: [
+				{
+					id: "153D599D82983310"
+					type: "item"
+					item: "kubejs:inductive_mechanism"
+					consume_items: false
+				}
+				{
+					id: "057A05C13C55ABC4"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Глава 3 завершена!"
+			x: -1.5d
+			y: 13.5d
+			shape: "hexagon"
+			description: [
+				"Поздравляем! Индукционые механизмы теперь будут стабильно создаваться. Это открывает двери для новых захватывающих технологических и магических открытий!"
+				""
+				"Как только вы будете довольны линией сборки, вернитесь на вкладку обзор. Там будут новые возможности для изучения."
+			]
+			dependencies: ["6CBA3D97CAD5DB63"]
+			size: 2.0d
+			id: "3A63A48662F352CB"
+			tasks: [{
+				id: "6F268D7B84CB1DB7"
+				type: "item"
+				item: "thermal:machine_frame"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "002FAA00240A80FD"
+					type: "item"
+					item: "kubejs:inductive_mechanism"
+					count: 16
+				}
+				{
+					id: "494BEA0CE2C8AF74"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+					random_bonus: 4
+				}
+				{
+					id: "5E5F5C257C45D344"
+					type: "item"
+					item: "thermal:invar_ingot"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Ненормально"
+			icon: "ae2:singularity"
+			x: -1.5d
+			y: 4.0d
+			subtitle: "Изобретение #20-3"
+			description: ["При дроблении колеса дробления с помощью колёс дробления создается и отбрасывается странная аномалия. Мы можем использовать это в наших интересах."]
+			dependencies: ["7AAE71F57FB89BCC"]
+			id: "2C81D358594C4352"
+			tasks: [
+				{
+					id: "5BF8BF7A24029B57"
+					type: "item"
+					item: "ae2:singularity"
+					consume_items: false
+				}
+				{
+					id: "09AAD9853B976D69"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Реактор"
+			icon: "ae2:quantum_entangled_singularity"
+			x: -1.5d
+			y: 5.5d
+			subtitle: "Изобретение #24"
+			description: [
+				"А вот и центральная особенность этого заводского крыла: Реактор."
+				""
+				"Для продвижения к индуктивным катушкам требуется контролируемый взрыв, когда близлежащие сингулярности и пыль Эндера объединяются. Попробуйте придумать схему, чтобы непрерывно взрывать эти стопки предметов."
+				""
+				"Примечание: Эндер-пыль и Сингулярности расходуются в соотношении 1:1. Они не обязательно должны находиться в одном и том же месте. Один тротил может превратить несколько наборов ингредиентов. Результат будет выпадать в том месте, где находится предмет Сингулярности."
+			]
+			dependencies: [
+				"02B2E249421FAE58"
+				"2C81D358594C4352"
+				"375C9A43FE5620B6"
+			]
+			id: "5A199B898D41A309"
+			tasks: [
+				{
+					id: "63C5611154B9B124"
+					type: "item"
+					item: "ae2:quantum_entangled_singularity"
+					consume_items: false
+				}
+				{
+					id: "3A68EA184DE4D9B4"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Checker Crafters"
+			icon: "minecraft:tnt"
+			x: 0.0d
+			y: 4.0d
+			subtitle: "Contraption 23-2"
+			description: ["Use Mechanical Crafters to build TNT. Since most of its slots will have to be supplied individually, a mechanical Arm might help for provinding the necessary logistics."]
+			dependencies: [
+				"5F9BA7BA46D2E5B8"
+				"050A20198A80CF1A"
+			]
+			id: "02B2E249421FAE58"
+			tasks: [
+				{
+					id: "39C8F3F28C7A271C"
+					type: "item"
+					item: "minecraft:tnt"
+					consume_items: false
+				}
+				{
+					id: "2AD912C0E25F5D65"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Готовим немножко пороха"
+			icon: "minecraft:gunpowder"
+			x: 1.5d
+			y: 4.0d
+			subtitle: "Изобретение #22-2"
+			description: [
+				"Трансмутация зеленой реактивной смеси требует очень специальных условий нагрева, доступных только на кострах или кухонных плитах."
+				""
+				"Этому механизму потребуется особая способность как размещать, так и собирать предметы из этих мест."
+			]
+			dependencies: [
+				"3D1EEB596FDBE4E7"
+				"016864AD0C9247B9"
+			]
+			dependency_requirement: "one_completed"
+			id: "050A20198A80CF1A"
+			tasks: [
+				{
+					id: "65AD93315DC72371"
+					type: "item"
+					item: "minecraft:gunpowder"
+					consume_items: false
+				}
+				{
+					id: "34EFEE60A6755C01"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "...и больше песка"
+			icon: "minecraft:sand"
+			x: 0.0d
+			y: 1.0d
+			subtitle: "Изобретение #23-1"
+			description: ["Песок потребуется для создания взрывчатки, необходимой для Реактора. К счастью, новые стандарты открыли доступ к дробильным колесам, которые делают добычу песка гораздо менее хлопотным делом."]
+			hide_dependency_lines: true
+			dependencies: ["397232F676CB621B"]
+			id: "5F9BA7BA46D2E5B8"
+			tasks: [
+				{
+					id: "1127E4C296ED5A31"
+					type: "item"
+					item: "minecraft:sand"
+					consume_items: false
+				}
+				{
+					id: "2A3EAC60765E5C7A"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Готовим немножко пыли Эндера"
+			icon: "ae2:ender_dust"
+			x: 1.5d
+			y: 5.5d
+			subtitle: "Изобретение #22-3"
+			description: [
+				"Трансмутация фиолетовой реактивной смеси требует очень специальных условий нагрева, доступных только на кострах или кухонных плитах."
+				""
+				"Этому механизму потребуется особая способность как размещать, так и собирать предметы из этих мест."
+			]
+			dependencies: [
+				"3D1EEB596FDBE4E7"
+				"016864AD0C9247B9"
+			]
+			dependency_requirement: "one_completed"
+			id: "375C9A43FE5620B6"
+			tasks: [
+				{
+					id: "74E8DBEBD9AA5D72"
+					type: "item"
+					item: "ae2:ender_dust"
+					consume_items: false
+				}
+				{
+					id: "37A6393C0AD6E861"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Окраска космического холста"
+			icon: "kubejs:dye_entangled_singularity"
+			x: -1.5d
+			y: 7.0d
+			subtitle: "Изобретение #26-1"
+			description: ["Смешивание запутанных сингулярностей с выбранным красителем создает саму эссенцию цвета! Именно то, что нам нужно для создания совершенного хроматического соединения."]
+			dependencies: [
+				"27C191346BB14D9D"
+				"5A199B898D41A309"
+			]
+			id: "2CCD84D55DE71EB2"
+			tasks: [
+				{
+					id: "1A034719E3B94207"
+					type: "item"
+					item: "kubejs:dye_entangled_singularity"
+					consume_items: false
+				}
+				{
+					id: "4B4BDAA9DFB0518A"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Бонус 3A завершён!"
+			x: -1.5d
+			y: 21.0d
+			shape: "hexagon"
+			description: ["Великолепно! Сила мгновенной транспортировки наконец-то в ваших руках. Наверняка на вашем заводе есть места, где это действительно может ускорить работу."]
+			dependencies: ["6DBEF7A11890ADF8"]
+			size: 2.0d
+			id: "4EDD9A8F14E48EAE"
+			tasks: [{
+				id: "314DEBB9F9DE70F4"
+				type: "item"
+				item: "kubejs:enderium_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "2445637181E32B19"
+					type: "item"
+					item: "kubejs:abstruse_mechanism"
+					count: 16
+				}
+				{
+					id: "6884BD55CF5F5676"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					random_bonus: 4
+				}
+				{
+					id: "1383A8E9F3AC725D"
+					type: "item"
+					item: "thermal:enderium_ingot"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Насыщенно эндериумом"
+			x: -1.5d
+			y: 19.0d
+			shape: "circle"
+			description: ["И наконец, модернизируйте несколько из ваших индуктивных механизмов в плавильной печи, используя недавно полученный сплав."]
+			dependencies: ["7B080B5C87247EA1"]
+			id: "6DBEF7A11890ADF8"
+			tasks: [{
+				id: "6F8624E071829779"
+				type: "item"
+				item: "kubejs:abstruse_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Далёкая экспедиция"
+			x: 0.0d
+			y: 17.5d
+			shape: "circle"
+			description: [
+				"После безупречной встречи с Драконом Края, пройдите к вратам и отправляйтесь на внешние острова."
+				""
+				"Здесь вы сможете найти Энногель, необходимый для создания сплава Эндериума."
+			]
+			dependencies: ["05C7E580ED88B556"]
+			id: "794B3C10C6110CB5"
+			tasks: [{
+				id: "7E7DF9C3DCFF0724"
+				type: "item"
+				item: "enlightened_end:ennegel_glob"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Цикл энногеля"
+			icon: "enlightened_end:ennegel_fern"
+			x: 0.0d
+			y: 19.5d
+			shape: "circle"
+			description: ["Благодаря индуктивной технологии у вас есть возможность пассивно производить энногель, если вам требуется более стабильный и удобный запас Эндериума."]
+			dependencies: ["794B3C10C6110CB5"]
+			id: "1CCDA748B237F6F5"
+			tasks: [{
+				id: "05F0DE924816E7F5"
+				type: "item"
+				item: "thermal:machine_insolator"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "6B1ECF8BD760D03E"
+				type: "item"
+				item: "thermal:phytogro"
+				count: 16
+			}]
+		}
+		{
+			title: "Чужеземные сплавы"
+			x: -1.5d
+			y: 18.0d
+			shape: "circle"
+			description: [
+				"Запустите индукционную плавильню для двух раундов обработки:"
+				""
+				"Во-первых, обработайте серебряные слитки с помощью пыли Эндера и энногеля."
+			]
+			dependencies: [
+				"0D146AD9FE774F8B"
+				"794B3C10C6110CB5"
+				"3BFC4DFCE765F3EA"
+			]
+			id: "7B080B5C87247EA1"
+			tasks: [{
+				id: "0EC104535857B542"
+				type: "item"
+				item: "thermal:enderium_ingot"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Вставьте монету"
+			x: -3.0d
+			y: 15.0d
+			shape: "circle"
+			description: [
+				"Особые свойства серебра могут оказаться полезными при создании сплава Эндериума."
+				""
+				"Как оказалось, единственным источником серебра являются ваши деньги. Заставляет задуматься, откуда его берут официальные монетные дворы."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"2BB2C7B95E3C89AE"
+				"6CBA3D97CAD5DB63"
+			]
+			hide: true
+			id: "38B063C8DE71E86D"
+			tasks: [{
+				id: "3B8AF2614A9EE681"
+				type: "item"
+				item: "thermal:silver_coin"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Растворили"
+			x: -1.5d
+			y: 15.5d
+			shape: "circle"
+			description: ["Возьмите монеты и бросьте их в плавильню. Осторожно: это необратимый процесс."]
+			dependencies: ["38B063C8DE71E86D"]
+			id: "0C11EC34D5FA508B"
+			tasks: [{
+				id: "1E9F96D2152F7384"
+				type: "item"
+				title: "Copper Can (Molten Silver)"
+				item: {
+					id: "tconstruct:copper_can"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_silver"
+					}
+				}
+			}]
+		}
+		{
+			title: "Ещё не Конец"
+			icon: "minecraft:end_portal_frame"
+			x: 0.0d
+			y: 15.0d
+			shape: "circle"
+			description: ["Секреты телепортации лежат за пространственными вратами в Конец."]
+			hide_dependency_lines: true
+			dependencies: [
+				"6CBA3D97CAD5DB63"
+				"2BB2C7B95E3C89AE"
+			]
+			hide: true
+			id: "05C7E580ED88B556"
+			tasks: [{
+				id: "4E429C9E118BA2C7"
+				type: "item"
+				item: "minecraft:end_stone"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Вооружаем активатор III"
+			x: 0.0d
+			y: 11.5d
+			shape: "circle"
+			description: [
+				"Хорошо бы запастись парой резонаторов для сборки механизмов"
+				"."
+				"И нет, беспокоиться об их полной автоматизации всё так же не нужно."
+			]
+			hide_dependency_lines: true
+			dependencies: ["626A7D9947D82B89"]
+			id: "59D2104DB6AE93FD"
+			tasks: [{
+				id: "6334526E14C21487"
+				type: "item"
+				item: {
+					id: "kubejs:chromatic_resonator"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "Палки экспресс"
+			icon: "minecraft:stick"
+			x: -3.0d
+			y: 1.0d
+			subtitle: "Изобретение #19"
+			description: ["Для следующего трюка необходим запас деревянных палок. Потребуется ли для этого новый комбайн или просто плановая поставка от механизма #1 - решать вам."]
+			hide_dependency_lines: true
+			dependencies: ["397232F676CB621B"]
+			id: "194B973EAF17809C"
+			tasks: [
+				{
+					id: "293DC3FF985B575B"
+					type: "item"
+					item: "minecraft:stick"
+					consume_items: false
+				}
+				{
+					id: "435C3E443BCC9176"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Могучая стена"
+			icon: "create:crushing_wheel"
+			x: -1.5d
+			y: 2.5d
+			subtitle: "Изобретение #20-2"
+			description: [
+				"Далее, нам понадобятся дробильные колеса. Не только как машина, но и как ингредиент."
+				""
+				"Стены из механических сборщиков могут быстро помешать дорожкам и другой инфраструктуре. Обязательно выделите им немного места."
+			]
+			dependencies: [
+				"194B973EAF17809C"
+				"5C277D27606F64DA"
+			]
+			id: "7AAE71F57FB89BCC"
+			tasks: [
+				{
+					id: "716CDC854FF1E8C2"
+					type: "item"
+					item: "create:crushing_wheel"
+					consume_items: false
+				}
+				{
+					id: "764E76A93ED07203"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Отходы производства"
+			icon: "tconstruct:molten_ender_bucket"
+			x: 0.5d
+			y: 9.0d
+			shape: "circle"
+			description: ["При сливе шариков краски образуется значительное количество жидкого побочного продукта, который необходимо утилизировать до того, как он начнет засорять производственную линию."]
+			dependencies: ["3B421C8F7947E542"]
+			id: "2C40901DB42DD8F8"
+			tasks: [{
+				id: "7058D1CE264D6769"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Готовим немножко удобрений"
+			icon: "minecraft:bone_meal"
+			x: 1.5d
+			y: 7.0d
+			subtitle: "Изобретение #22-4"
+			description: [
+				"Трансмутация синей реактивной смеси требует очень специальных условий нагрева, доступных только на кострах или кухонных плитах."
+				""
+				"Этому механизму потребуется особая способность как размещать, так и собирать предметы из этих мест."
+			]
+			dependencies: [
+				"3D1EEB596FDBE4E7"
+				"016864AD0C9247B9"
+			]
+			dependency_requirement: "one_completed"
+			id: "402F89CABF6BCDA4"
+			tasks: [
+				{
+					id: "0B625314B34801AA"
+					type: "item"
+					item: "minecraft:bone_meal"
+					consume_items: false
+				}
+				{
+					id: "4002627D52C3A616"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Мистическая биомасса"
+			icon: "kubejs:sky_slime_fern_paste"
+			x: 3.5d
+			y: 4.0d
+			subtitle: "Изобретение #22-1"
+			description: ["Направьте лишние листья в дробилку, готовясь к предстоящему фокусу."]
+			dependencies: ["38D19F4EC634F33B"]
+			id: "3D1EEB596FDBE4E7"
+			tasks: [
+				{
+					id: "3EB8C2219D74126B"
+					type: "item"
+					item: "kubejs:ender_slime_fern_paste"
+					consume_items: false
+				}
+				{
+					id: "4CB87BE063DACC5F"
+					type: "item"
+					item: "kubejs:earth_slime_fern_paste"
+					consume_items: false
+				}
+				{
+					id: "1F0B0F9D72A6F611"
+					type: "item"
+					item: "kubejs:sky_slime_fern_paste"
+					consume_items: false
+				}
+				{
+					id: "65864C0AE5B28091"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Духовный цикл"
+			icon: "kubejs:sky_slimy_fern_leaf"
+			x: 3.5d
+			y: 2.5d
+			subtitle: "Изобретение #21"
+			description: [
+				"Слизневые папоротники обладают свойством мгновенной регенерации под воздействием огня душ. Подобно Кварцевому Инкубатору на другой Фабрике, мы можем использовать это свойство для создания пассивного запаса."
+				""
+				"Цикл прост: разрежьте растение папоротника на половинки с помощью активатора, затем бросьте один из листьев в огонь душ. Рекомендуем убедиться, что все цвета папоротника дублируются с одинаковой скоростью."
+				""
+				"Как создать огонь душ: бросив на землю демонический фрукт и подожгите его."
+				""
+				"Ах да, храните резервную копию каждого папоротника в безопасном месте."
+			]
+			dependencies: ["01BE1A7FCE79C63D"]
+			id: "38D19F4EC634F33B"
+			tasks: [
+				{
+					id: "135871C95B811F71"
+					type: "item"
+					item: "kubejs:sky_slimy_fern_leaf"
+					consume_items: false
+				}
+				{
+					id: "315328866377A0DC"
+					type: "item"
+					item: "kubejs:ender_slimy_fern_leaf"
+					consume_items: false
+				}
+				{
+					id: "65D5A32F475D78B6"
+					type: "item"
+					item: "kubejs:earth_slimy_fern_leaf"
+					consume_items: false
+				}
+				{
+					id: "40B23393B8A6D2E8"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Пост-процесс"
+			icon: "kubejs:radiant_sheet"
+			x: -6.0d
+			y: 9.0d
+			subtitle: "Изобретение #28-2"
+			description: [
+				"Основная работа выполнена. Осталась лишь небольшая сборочная линия для переработки изысканного сияния в сияющие катушки."
+				""
+				"Начните с механического пресса."
+			]
+			dependencies: ["286510750C333C1F"]
+			id: "410FF28B63E0FC0C"
+			tasks: [
+				{
+					id: "0B3A86351C4C94D9"
+					type: "item"
+					item: "kubejs:radiant_sheet"
+					consume_items: false
+				}
+				{
+					id: "37BF06FF4255C1B1"
+					type: "checkmark"
+					title: "Автоматизированно"
+				}
+			]
+		}
+		{
+			title: "Дорогие кирпичи"
+			x: -1.5d
+			y: 16.5d
+			shape: "circle"
+			description: ["Отлейте расплавленное серебро в слиток и полюбуйтесь его блеском."]
+			dependencies: ["0C11EC34D5FA508B"]
+			id: "0D146AD9FE774F8B"
+			tasks: [{
+				id: "7A7EE0DF809CEDC8"
+				type: "item"
+				title: "Silver Ingot"
+				icon: "thermal:silver_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/silver"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "На гарнир"
+			x: -3.0d
+			y: 17.5d
+			shape: "circle"
+			description: ["Отложите немного пыли Эндера из вашего Реактора. В случае, если ваши поставки ограничены, вы можете использовать жемчуг Эндера."]
+			hide_dependency_lines: true
+			dependencies: [
+				"2BB2C7B95E3C89AE"
+				"6CBA3D97CAD5DB63"
+			]
+			hide: true
+			id: "3BFC4DFCE765F3EA"
+			tasks: [{
+				id: "56C6D2D683E35E74"
+				type: "item"
+				item: "ae2:ender_dust"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Скользкие папоротники"
+			icon: "tconstruct:sky_slime_fern"
+			x: 3.5d
+			y: 1.0d
+			shape: "circle"
+			description: [
+				"Для производства пороха, костяной муки и пыли Эндера можно использовать особый \"слизневый папоротник\" в качестве альтернативы фермам монстров."
+				""
+				"Немного побродите по землям и обратите внимание на вопиюще яркие цветные пятна в растительности. Не забудьте взять с собой ножницы."
+			]
+			hide_dependency_lines: true
+			dependencies: ["397232F676CB621B"]
+			id: "01BE1A7FCE79C63D"
+			tasks: [
+				{
+					id: "2967A771F32C223D"
+					type: "item"
+					item: "tconstruct:earth_slime_fern"
+					consume_items: false
+				}
+				{
+					id: "2A559C5996DF8E69"
+					type: "item"
+					item: "tconstruct:sky_slime_fern"
+					consume_items: false
+				}
+				{
+					id: "1EE76BAC230B9232"
+					type: "item"
+					item: "tconstruct:ender_slime_fern"
+					consume_items: false
+				}
+			]
+		}
+		{
+			title: "Настоящая депрессия"
+			icon: "ae2:black_paint_ball"
+			x: -3.5d
+			y: 5.0d
+			shape: "circle"
+			description: ["Упс! Истощение эссенции цвета слишком много раз приведет к созданию чёрного шарика с краской, который нельзя будет использовать для дальнейшей обработки."]
+			dependencies: ["3BE15AA5C237AB80"]
+			id: "03B7909623F97843"
+			tasks: [{
+				id: "07521D1C50A8B75F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Мне нравятся мобы, вообще-то."
+			icon: "minecraft:zombie_head"
+			x: 3.5d
+			y: 5.5d
+			shape: "circle"
+			subtitle: "Альтернаятивное изобретение #21 \\& 22"
+			description: [
+				"Альтернативой автоматизации Духовного цикла будет сознаеие какой-нибудь фермы мобов на основе спаунеров."
+				""
+				"Поставьте галочку, чтобы пропустить приспособление для дублирования папоротника."
+			]
+			hide_dependency_lines: true
+			dependencies: ["397232F676CB621B"]
+			id: "016864AD0C9247B9"
+			tasks: [{
+				id: "53728BDEA8F1938C"
+				type: "checkmark"
+				title: "Checkmark"
+			}]
+		}
+		{
+			title: "Смотрим, наблюдаем"
+			x: -3.5d
+			y: -1.0d
+			shape: "circle"
+			description: [
+				"Несколько из следующих устройств предполагают сбрасывание предметов на землю. Важно переключать производство при определенных порогах буфера, когда процесс не стекается при переполнении (например, автоматическое ожидание предметов на ленте)."
+				""
+				"А если быть точнее: Когда выходной буфер превышает 75%, прекратите производство изделий. Как только он опустится ниже 25%, запустите процесс снова. Это предотвратит переполнение и машины не будут раскидывать предметы повсюду."
+				""
+				"Настраиваемый компаратор предназначен именно для этой цели. "
+			]
+			dependencies: ["397232F676CB621B"]
+			id: "472FB03D0E5A38D6"
+			tasks: [{
+				id: "3C38C38462B73396"
+				type: "item"
+				item: "create:stockpile_switch"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "1DADD3BF4F389910"
+				type: "item"
+				item: "create:redstone_link"
+				count: 2
+			}]
+		}
+		{
+			title: "Механический автомолот"
+			icon: "thermal:invar_ingot"
+			x: 0.5d
+			y: -1.0d
+			shape: "circle"
+			subtitle: "Изобретение #30"
+			description: [
+				"Помимо индуктивного механизма, инварные машины построены на прочном металлическом сплаве между железом и никелем."
+				""
+				"Поскольку полный процесс обработки инвара занимает несколько длительных этапов, рекомендуется автоматизация."
+			]
+			dependencies: ["397232F676CB621B"]
+			id: "26A1E68DA7ACB025"
+			tasks: [{
+				id: "428A5B60D9C268BD"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

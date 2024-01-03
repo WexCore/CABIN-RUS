@@ -1,0 +1,18 @@
+{
+	"block.thermal.machine_press": "Торговая станция",
+	"block.thermal.machine_sawmill": "Экстрактор реагентов",
+	"block.thermal.machine_frame": "Инварное устройство",
+	"info.thermal.machine_press.0": "Автоматически обменивает предметы на монеты и наоборот.",
+	"info.thermal.machine_press.1": "Требуется торговая карта, купленная в квестах.",
+	"info.thermal.machine_press.2": "Спасибо за покупку!",
+	"info.thermal.machine_sawmill.0": "Автоматически удаляет реагенты из их сосудов.",
+	"info.thermal.machine_sawmill.1": "",
+	"info.thermal.machine_sawmill.2": "",
+	"msg.fuelingStation.link": "Теперь связывание с позиции",
+	"item.thermal.turbo_servo_attachment": "Attachment: Servo",
+	"item.thermal.raw_lead": "Концетрированный необработаный свинец",
+	"item.thermal.raw_nickel": "Концетрированный необработаный никель",
+	"item.thermal.raw_silver": "Концетрированное необработаное серебро"
+
+
+}

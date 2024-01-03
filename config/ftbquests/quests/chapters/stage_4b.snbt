@@ -1,0 +1,866 @@
+{
+	id: "102E012616516E5D"
+	group: "331B6409EF6A7840"
+	order_index: 5
+	filename: "stage_4b"
+	title: "&f4a&r Хаотическая Алхимия"
+	icon: "kubejs:substrate_chaos"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Еще один путь вперед"
+			icon: "kubejs:inductive_mechanism"
+			x: 1.75d
+			y: 2.0d
+			shape: "hexagon"
+			description: [
+				"В качестве альтернативного, более рискованного подхода к получению переработанных кремниевых ресурсов, лазерная алхимия может обеспечить необычный, но выгодный новый вариант развития."
+				""
+				"Откройте секретные коды каждого класса реагентов, чтобы узнать рецепт катализаторов Хаоса."
+				""
+				"Найдя катализатор Хаоса, можно не только превратить материал в кремний, но и создать другие ценные ресурсы из самых простых ингредиентов!"
+			]
+			dependencies: ["5DF206B1738D08A0"]
+			hide: true
+			size: 2.0d
+			id: "05446225038D260A"
+			tasks: [{
+				id: "38B2DFD6233E49FD"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4AF4A93C5D5FB6DD"
+				type: "item"
+				item: "farmersdelight:hot_cocoa"
+			}]
+		}
+		{
+			title: "Инкапсуляция - Декапсуляция"
+			x: -0.25d
+			y: 2.0d
+			shape: "circle"
+			description: [
+				"Помимо установки алхимического лазера, вам понадобится еще несколько машин для вашей новой алхимической лаборатории. "
+				""
+				"- Инкапсулятор жидкости использует расплавленное стекло для создания реагентов из ресурсов."
+				""
+				"- Экстрактор реагентов может обратить этот процесс вспять."
+				""
+				"- Центробежный сепаратор необходим для анализа алхимических смесей в поисках подсказок. Это жизненно важная процедура при исследовании рецептов катализаторов."
+			]
+			dependencies: ["05446225038D260A"]
+			id: "42B615F7BECA6E58"
+			tasks: [
+				{
+					id: "39000CC22827EE50"
+					type: "item"
+					item: "thermal:machine_bottler"
+					consume_items: false
+				}
+				{
+					id: "6485567EC6630BF2"
+					type: "item"
+					item: "thermal:machine_sawmill"
+					consume_items: false
+				}
+				{
+					id: "75F82E2858B93DBD"
+					type: "item"
+					item: "thermal:machine_centrifuge"
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "36A2C5B3E20C28DF"
+			tasks: [{
+				id: "1E93F39E5F1F678E"
+				type: "item"
+				item: "kubejs:substrate_andesite"
+				consume_items: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "60F7A50F984284F1"
+			tasks: [{
+				id: "5D98554C2EF24A62"
+				type: "item"
+				item: "kubejs:substrate_diorite"
+				consume_items: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "35406FED565B7EFF"
+			tasks: [{
+				id: "090BAD8069B5962C"
+				type: "item"
+				item: "kubejs:substrate_granite"
+				consume_items: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "6CBB7512CDFF4C2E"
+			tasks: [{
+				id: "739A22504FFAC363"
+				type: "item"
+				item: "kubejs:substrate_cobblestone"
+				consume_items: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "0F688EAF792BAE96"
+			tasks: [{
+				id: "2F714B82CD1A3FDD"
+				type: "item"
+				item: "kubejs:substrate_basalt"
+				consume_items: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "560F2995CE2862D7"
+			tasks: [{
+				id: "6F2432F797A27549"
+				type: "item"
+				item: "kubejs:substrate_scoria"
+				consume_items: false
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "3978E4B39C9DB44D"
+			tasks: [{
+				id: "0A7F5C2865C6F5F5"
+				type: "item"
+				item: "kubejs:substrate_red"
+				consume_items: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "122D3D6743D1DD04"
+			tasks: [{
+				id: "6FD70BEFECE67F2C"
+				type: "item"
+				item: "kubejs:substrate_orange"
+				consume_items: false
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "1E856F69C03B1D75"
+			tasks: [{
+				id: "2A79E5D1D6C6787F"
+				type: "item"
+				item: "kubejs:substrate_yellow"
+				consume_items: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "49957428564E8101"
+			tasks: [{
+				id: "183677E3CD7A38E0"
+				type: "item"
+				item: "kubejs:substrate_green"
+				consume_items: false
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "678C5FC6A898E988"
+			tasks: [{
+				id: "7E01B9B59066FD90"
+				type: "item"
+				item: "kubejs:substrate_blue"
+				consume_items: false
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "3377A2C391B6F03A"
+			tasks: [{
+				id: "217E5A578A83222B"
+				type: "item"
+				item: "kubejs:substrate_magenta"
+				consume_items: false
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "616D07DC2CE17BA4"
+			tasks: [{
+				id: "119E7FC4D7BB242F"
+				type: "item"
+				item: "kubejs:substrate_blaze"
+				consume_items: false
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "758B836F53187B8C"
+			tasks: [{
+				id: "6B17F1E13DF99E50"
+				type: "item"
+				item: "kubejs:substrate_slime"
+				consume_items: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "4E3B9AA2062424F4"
+			tasks: [{
+				id: "0F0273B7441B6840"
+				type: "item"
+				item: "kubejs:substrate_nether"
+				consume_items: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "20AA864C5201C638"
+			tasks: [{
+				id: "465B3645832D5B9A"
+				type: "item"
+				item: "kubejs:substrate_obsidian"
+				consume_items: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "35A6E3BBD80FB00F"
+			tasks: [{
+				id: "3D85594FB65E7A91"
+				type: "item"
+				item: "kubejs:substrate_gunpowder"
+				consume_items: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "03DB1FCC30B7321C"
+			tasks: [{
+				id: "6BE52A47FB071345"
+				type: "item"
+				item: "kubejs:substrate_prismarine"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "421E285B7D642676"
+			tasks: [{
+				id: "10EF9D8072B539A4"
+				type: "item"
+				item: "kubejs:substrate_arcane"
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "6E154A8C81D8DD5F"
+			tasks: [{
+				id: "0E7911464600ABEC"
+				type: "item"
+				item: "kubejs:substrate_apatite"
+				consume_items: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "58A0EA80BB3A3262"
+			tasks: [{
+				id: "3106C362414AB238"
+				type: "item"
+				item: "kubejs:substrate_sulfur"
+				consume_items: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "2C6EE5BEB945F154"
+			tasks: [{
+				id: "665D6D91F09233AE"
+				type: "item"
+				item: "kubejs:substrate_niter"
+				consume_items: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "7CA6AC3B07E07D81"
+			tasks: [{
+				id: "6C839FAE45EC2AB4"
+				type: "item"
+				item: "kubejs:substrate_certus"
+				consume_items: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "40FDCF626F5EBB08"
+			tasks: [{
+				id: "55AA2EC101DB9047"
+				type: "item"
+				item: "kubejs:substrate_quartz"
+				consume_items: false
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "5C0CE1EDF9BF49C9"
+			tasks: [{
+				id: "185775BFC6FE2D89"
+				type: "item"
+				item: "kubejs:substrate_zinc"
+				consume_items: false
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "5A957C9B5D8DE1A1"
+			tasks: [{
+				id: "3FA02655BC1E99A6"
+				type: "item"
+				item: "kubejs:substrate_copper"
+				consume_items: false
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "2995ADCCB6496A22"
+			tasks: [{
+				id: "4932CD6D8FE77BB7"
+				type: "item"
+				item: "kubejs:substrate_iron"
+				consume_items: false
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "285F815678D5F32A"
+			tasks: [{
+				id: "0EFBC080DFC4F106"
+				type: "item"
+				item: "kubejs:substrate_nickel"
+				consume_items: false
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "394A502BD8B5B1A0"
+			tasks: [{
+				id: "08F2F111C97B57CD"
+				type: "item"
+				item: "kubejs:substrate_lead"
+				consume_items: false
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "22F0C935130ADCF4"
+			tasks: [{
+				id: "4A4C9D6E372A5466"
+				type: "item"
+				item: "kubejs:substrate_gold"
+				consume_items: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "235264EC150EDB4B"
+			tasks: [{
+				id: "2D94A57470F15112"
+				type: "item"
+				item: "kubejs:substrate_lapis"
+				consume_items: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "33B3AB3394DD012A"
+			tasks: [{
+				id: "01253AF4C04D6EE2"
+				type: "item"
+				item: "kubejs:substrate_cinnabar"
+				consume_items: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "58A6D5414035EEA1"
+			tasks: [{
+				id: "09ADE0525C1D7379"
+				type: "item"
+				item: "kubejs:substrate_sapphire"
+				consume_items: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "2EECFBC4E2BF1F37"
+			tasks: [{
+				id: "36A7406CD330E7AB"
+				type: "item"
+				item: "kubejs:substrate_emerald"
+				consume_items: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "2FD7D312EE63EA53"
+			tasks: [{
+				id: "68CD031A5C815200"
+				type: "item"
+				item: "kubejs:substrate_ruby"
+				consume_items: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: 5.5d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "2644760FA76D5F30"
+			tasks: [{
+				id: "61BF1495FCB27EEB"
+				type: "item"
+				item: "kubejs:substrate_diamond"
+				consume_items: false
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.0d
+			shape: "circle"
+			description: [
+				"Открытие этой ноды обозначает, что вы собрали все реагенты из магматической категории."
+				""
+				"Магматический катализатор может быть создан комбинацией четырех реагентов этой категории в Алхимическом лазере. &7(См. запись JEI о катализаторе для получения дополнительной информации)"
+				""
+				"Рекомендуется всегда записывать предыдущие результаты. Так можно найти решение менее чем за шесть попыток!"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"36A2C5B3E20C28DF"
+				"60F7A50F984284F1"
+				"35406FED565B7EFF"
+				"0F688EAF792BAE96"
+				"6CBB7512CDFF4C2E"
+				"560F2995CE2862D7"
+			]
+			id: "3EB5CD9776DF0E63"
+			tasks: [{
+				id: "34B1FAA6107B2411"
+				type: "item"
+				item: "kubejs:substrate_igneous"
+				consume_items: false
+			}]
+		}
+		{
+			x: -2.5d
+			y: 6.5d
+			shape: "circle"
+			description: [
+				"Открытие этой ноды обозначает, что вы собрали все реагенты из травяной категории."
+				""
+				"Травяной катализатор может быть создан комбинацией четырех реагентов этой категории в Алхимическом лазере. &7(См. запись JEI о катализаторе для получения дополнительной информации)"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"3377A2C391B6F03A"
+				"3978E4B39C9DB44D"
+				"678C5FC6A898E988"
+				"49957428564E8101"
+				"1E856F69C03B1D75"
+				"122D3D6743D1DD04"
+			]
+			id: "2B195E5B195246F5"
+			tasks: [{
+				id: "1F5A37CC8E10B3DB"
+				type: "item"
+				item: "kubejs:substrate_herbal"
+				consume_items: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.25d
+			shape: "circle"
+			description: [
+				"Открытие этой ноды обозначает, что вы собрали все реагенты из нестабильной категории."
+				""
+				"Нестабильный катализатор может быть создан комбинацией четырех реагентов этой категории в Алхимическом лазере. &7(См. запись JEI о катализаторе для получения дополнительной информации)"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"4E3B9AA2062424F4"
+				"616D07DC2CE17BA4"
+				"758B836F53187B8C"
+				"03DB1FCC30B7321C"
+				"20AA864C5201C638"
+				"35A6E3BBD80FB00F"
+			]
+			id: "62EB94758A862091"
+			tasks: [{
+				id: "744E156650A1F4B3"
+				type: "item"
+				item: "kubejs:substrate_volatile"
+				consume_items: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.25d
+			shape: "circle"
+			description: [
+				"Открытие этой ноды обозначает, что вы собрали все реагенты из кристаллической категории."
+				""
+				"Кристаллический катализатор может быть создан комбинацией четырех реагентов этой категории в Алхимическом лазере. &7(См. запись JEI о катализаторе для получения дополнительной информации)"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"58A0EA80BB3A3262"
+				"2C6EE5BEB945F154"
+				"7CA6AC3B07E07D81"
+				"40FDCF626F5EBB08"
+				"421E285B7D642676"
+				"6E154A8C81D8DD5F"
+			]
+			id: "549D7F67A97CD2CE"
+			tasks: [{
+				id: "0881E44E3823D060"
+				type: "item"
+				item: "kubejs:substrate_crystal"
+				consume_items: false
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.5d
+			shape: "circle"
+			description: [
+				"Открытие этой ноды обозначает, что вы собрали все реагенты из металлургической категории."
+				""
+				"Металлургический катализатор может быть создан комбинацией четырех реагентов этой категории в Алхимическом лазере. &7(См. запись JEI о катализаторе для получения дополнительной информации)"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"2995ADCCB6496A22"
+				"5C0CE1EDF9BF49C9"
+				"5A957C9B5D8DE1A1"
+				"22F0C935130ADCF4"
+				"394A502BD8B5B1A0"
+				"285F815678D5F32A"
+			]
+			id: "0CC92E94D10E681D"
+			tasks: [{
+				id: "4E81FAFD3B80DFE9"
+				type: "item"
+				item: "kubejs:substrate_metal"
+				consume_items: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: 7.0d
+			shape: "circle"
+			description: [
+				"Открытие этой ноды обозначает, что вы собрали все реагенты из самоцветной категории."
+				""
+				"Самоцветный катализатор может быть создан комбинацией четырех реагентов этой категории в Алхимическом лазере. &7(См. запись JEI о катализаторе для получения дополнительной информации)"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"235264EC150EDB4B"
+				"2644760FA76D5F30"
+				"2FD7D312EE63EA53"
+				"58A6D5414035EEA1"
+				"2EECFBC4E2BF1F37"
+				"33B3AB3394DD012A"
+			]
+			id: "5200AD3B32D219C6"
+			tasks: [{
+				id: "10F212525DABED77"
+				type: "item"
+				item: "kubejs:substrate_gem"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Высший код"
+			x: 1.75d
+			y: 7.5d
+			shape: "circle"
+			description: [
+				"Открытие этой ноды обозначает, что вы собрали все катализаторы из всех категорий."
+				""
+				"Этот высший Катализатор представляет собой комбинацию четырех Катализаторов, подобно тому, как Катализаторы создаются из своих Реагентов."
+				"&7 (Более подробную информацию см. в записи JEI этого предмета)"
+			]
+			dependencies: [
+				"3EB5CD9776DF0E63"
+				"549D7F67A97CD2CE"
+				"2B195E5B195246F5"
+				"62EB94758A862091"
+				"0CC92E94D10E681D"
+				"5200AD3B32D219C6"
+			]
+			id: "7A9AA27029185035"
+			tasks: [{
+				id: "3299FF447F8110CF"
+				type: "item"
+				item: "kubejs:substrate_chaos"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Открытие"
+			x: 1.0d
+			y: 8.5d
+			shape: "circle"
+			description: [
+				"Вооружившись Катализатором Хаоса, вы найдете всевозможные пары для трансмутации среди вышеперечисленных реагентов."
+				""
+				"Просто положите катализатор хаоса и несколько банок одного реагента (трансмутация происходит с потерями) в вагонетку с воронкой и получите другой реагент после активации лазера. Имейте в виду, что катализатор никогда не расходуется в процессе."
+				""
+				"Один из реактивов должен вести не к другому известному реактиву, а к реактиву кремния. Если он окажется достаточно доступным, вы можете рассмотреть возможность выбора этого пути производства вместо основного."
+			]
+			dependencies: ["7A9AA27029185035"]
+			id: "6FDC8DA2FDED5FDD"
+			tasks: [{
+				id: "68FBEFA1BC6479ED"
+				type: "item"
+				item: "kubejs:substrate_silicon"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Алхимический лазер"
+			icon: "projectred_illumination:lime_inverted_cage_light"
+			x: 3.75d
+			y: 2.0d
+			shape: "circle"
+			description: [
+				"Главную роль в вашей лаборатории играет алхимический лазер."
+				""
+				"Лазер - единственный способ получить катализаторы или найти необходимые подсказки к их рецепту. Другой способ использования - это применение катализатора Хаоса к определенному реагенту, что приводит к трансмутации."
+				""
+				"Изобретатели могут ознакомиться с необходимыми компонентами машин через JEI или написав комманду"
+				""
+				" &6/c ponder kubejs:alchemical_laser"
+			]
+			dependencies: ["05446225038D260A"]
+			id: "1D1D1FEAF49C5E11"
+			tasks: [{
+				id: "04CC23968DBD8CC9"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "5F8758212BE89602"
+				type: "command"
+				title: "Open Ponder Scene"
+				icon: {
+					id: "occultism:book_of_calling_djinni_manage_machine"
+					Count: 1b
+					tag: {
+						spiritName: "Zedzeraeus"
+					}
+				}
+				team_reward: false
+				command: "/create ponder kubejs:alchemical_laser"
+				player_command: true
+			}]
+		}
+		{
+			title: "Автоматизация хаоса"
+			icon: "minecraft:hopper_minecart"
+			x: 2.5d
+			y: 9.0d
+			subtitle: "Изобретение #31-A"
+			description: [
+				"С рецептом трансмутации в руках, пришло время построить установку, способную создавать бесконечное количество кремниевого реагента с помощью лазерной алхимии и других этапов процесса."
+				""
+				"Обратите внимание, что конкретное решение сильно зависит от трансмутационных пар вашего мира, поэтому оно не может быть изложено в этом руководстве. Вы можете использовать JEI для поиска других необходимых рецептов, ведущих к требуемому вам реагенту."
+			]
+			dependencies: ["6FDC8DA2FDED5FDD"]
+			id: "630DA0C83959E9D8"
+			tasks: [{
+				id: "3E080B5561AD314E"
+				type: "checkmark"
+				title: "Автоматизированно"
+			}]
+		}
+		{
+			title: "Варп зона"
+			icon: "create:warped_window_pane"
+			x: 1.75d
+			y: 11.0d
+			shape: "hexagon"
+			description: ["Теперь, когда у вас есть пассивный запас кремниевого реагента, вы можете перейти к основному разделу главы 4. Вы откроете точку входа в конце цепочки рецептов."]
+			dependencies: ["630DA0C83959E9D8"]
+			size: 2.0d
+			id: "3B431AAADE8845FA"
+			tasks: [{
+				id: "7201E3A86096F5CF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Непонятливые штуки"
+			x: -6.5d
+			y: 5.0d
+			shape: "circle"
+			description: [
+				"Glowstone или Redstone Accellerator можно по желанию поместить в пятый слот вагонетки с воронкой при вводе кода катализатора."
+				""
+				"Это может открыть дополнительную информацию о правильной комбинации, как описано в их всплывающей подсказке."
+			]
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			optional: true
+			id: "1BCFB709E97A74FA"
+			tasks: [
+				{
+					id: "6A30FCE70C7C7289"
+					type: "item"
+					item: "kubejs:accellerator_redstone"
+					consume_items: false
+				}
+				{
+					id: "3D9F64E8128BB9A6"
+					type: "item"
+					item: "kubejs:accellerator_glowstone"
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 5.0d
+			shape: "circle"
+			description: ["Ваши монеты, похоже, тоже имеют соответствующий реагент. Хотя не надейтесь, что из ваших серебряных слитков можно будет чеканить новую валюту."]
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "566E72AE7D580917"
+			tasks: [{
+				id: "7EA2895F0FB5A5D6"
+				type: "item"
+				item: "kubejs:substrate_silver"
+				consume_items: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,3 +1,17 @@
+# ВНИМАНИЕ
+
+В модпаке [CABIN](https://www.curseforge.com/minecraft/modpacks/cabin), начиная с версии 2.0.0, появился официальный русский перевод.  
+Данный репозиторий более неактуален.
+
+
+
+
+  
+-------
+-------
+-------
+-------
+-------
 
 <p align="center">
   <img src="https://github.com/WexCore/CABIN-RUS/assets/19491308/4cc6d6ea-3cd4-4662-b721-2864469ecbc2" width="400" align="center" />
